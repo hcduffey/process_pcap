@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
  
 setuptools.setup(
     name="process_pcap",
-    version="0.0.1",
+    version="0.0.2",
     author="Cliff Duffey",
     author_email="cliff.duffey@pm.me",
     description="Package to process PCAP files",

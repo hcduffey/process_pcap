@@ -36,9 +36,9 @@ def get_dst_addresses(file: str) -> dict:
                 continue
 
             if dst_addr in dst_addresses:
-                dst_addresses[dst_addr] += 1
+                dst_addresses[dst_addr.exploded] += 1
             else:
-                dst_addresses[dst_addr] = 1
+                dst_addresses[dst_addr.exploded] = 1
 
         except KeyError:
             continue
